@@ -1,7 +1,7 @@
-import React from "react";
-import { Container,Header, ImageArea, ImageOverlay } from "./styled";
+import { Container,Header, ImageArea, ImageOverlay,CardArea } from "./styles";
 import BannerImage from "../../assets/image-michael-jordan.png"; 
 import LogoImage from "../../assets/logo.png"
+import Cards from "../cards";
 
 
 
@@ -20,6 +20,9 @@ const Home = ()=>{
           <p>O tênis Jordan é fruto de uma velha e forte <br/>parceria entre a Nike e o jogador Michael Jordan. </p>
         </ImageOverlay>
       </ImageArea>
+      <CardArea>
+        <Cards/>
+      </CardArea>
 
     </Container>
     </>);

@@ -13,7 +13,6 @@ export const Header = styled.div `
   justify-content:center;
   height:3rem;
   width:100%;
-  border: 1px solid black;
   >p{
     font-size:20px;
   }
@@ -21,7 +20,6 @@ export const Header = styled.div `
 export const ImageArea = styled.div`
   position:relative;
   width:100%;
-  border: 1px solid black;
   height:36vh;
   >img{
     width:100%;
@@ -31,14 +29,13 @@ export const ImageArea = styled.div`
 
 export const ImageOverlay = styled.div`
   position:absolute;
-  bottom: 2vh;
+  bottom: -1vh;
   display:flex;
   flex-direction:column;
   gap:1rem;
   color: var(--font);
-  right: 45vw;
+  right: 48vw;
   height:190px;
-  border:1px solid blue;
   width:30%;
   padding:10px;
   >h1{
@@ -46,9 +43,15 @@ export const ImageOverlay = styled.div`
   }
   >p{
     font-size: 2.5vh;
-    border:1px solid black;
   }
   >img{
     width:160px;
   }
+`;
+
+export const CardArea = styled.div`
+  margin-top:2rem;
+  border: 1px solid black;
+  width:100%;
+  height: auto;
 `;
