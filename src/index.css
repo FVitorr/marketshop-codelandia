@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --background: #FFFFFF;
+  --card: #F3F7FF;
+  --font-primary: #121214;
+  --font-sencondary: #7CA2F4;
+}
+
+body{
+  background: var(--background);
+}
