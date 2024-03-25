@@ -6,22 +6,14 @@ interface Card {
   Value: string;
 }
 
-const renderCard = (cards: Card[]) => {
-  const rows: JSX.Element[] = [];
-  for (let i = 0; i < cards.length; i+= 3){
-    const row: JSX.Element[] = [];
-    for (let j = i; j < i+3 && j < cards.length;j++){
-      row.push(
-        <Card key={j}>
-          <img src={cards[j].Img} alt="Imagem do cartão" />
-          <p>{cards[j].Description}</p>
-          <p>{cards[j].Value}</p>
-        </Card>
-      );
-    }
-    rows.push(<Row>{row}</Row>)
-  }
-  return rows
+const renderCards = (cards: Card[]) => {
+  return cards.map((card, index) => (
+    <Card key={index}>
+      <img src={card.Img} alt="Imagem do cartão" />
+      <p>{card.Description}</p>
+      <p>{card.Value}</p>
+    </Card>
+  ));
 };
 
 const cards: Card[] = [
@@ -36,7 +28,7 @@ const cards: Card[] = [
 const Cards = ()=> {
   return(
     <>
-      {renderCard(cards)}
+    <Container>{renderCards(cards)}</Container>
     </>
   );
 }
