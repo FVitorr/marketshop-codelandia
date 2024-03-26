@@ -27,8 +27,8 @@ export const Content = styled.div `
   >p{
     font-size:20px;
   }
-  >h2{
-    font-size:28px;
+  >h3{
+    font-size:24px;
     display:flex;
     align-items:center;
   }
