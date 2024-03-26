@@ -1,8 +1,7 @@
 import { Container, ImageArea, ImageOverlay } from "./styles";
 import Header from "../Header"
 import Banner from "../Banner";
-import Cards from "../Cards";
-
+import Store from "../Store";
 
 
 
@@ -11,6 +10,7 @@ const Home = ()=>{
     <Container>
       <Header/>
       <Banner/>
+      <Store/>
     </Container>
 
     </>);
