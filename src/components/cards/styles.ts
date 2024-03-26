@@ -3,18 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
   max-width: 1280px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Inicialmente exibir três elementos por linha */
+  grid-template-columns: repeat(3, minmax(300px, 1fr));; /* Inicialmente exibir três elementos por linha */
   grid-gap: 20px;
-  margin: 0 auto;
-  justify-content:center;
 
   @media (max-width: 992px) {
-    grid-template-columns: repeat(2, 1fr); /* Se a largura da tela for menor que 992px, exibir dois elementos por linha */
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); /* Se a largura da tela for menor que 992px, exibir dois elementos por linha */
 
   }
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(1, 1fr); /* Se a largura da tela for menor que 768px, exibir um elemento por linha */
+    grid-template-columns: repeat(1, minmax(300px, 1fr)); /* Se a largura da tela for menor que 768px, exibir um elemento por linha */
     
   }
 `;
@@ -39,9 +37,7 @@ export const Card = styled.div`
   > span {
     font-size: 12px;
     color: var(--font-sencondary);
-    padding-left:1rem;
+    
   }
-  >p{
-    padding-left:1rem;
-  }
+  
 `;

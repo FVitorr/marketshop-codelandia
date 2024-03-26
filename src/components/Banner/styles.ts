@@ -20,7 +20,7 @@ export const Content = styled.div `
   display:flex;
   flex-direction:column;
   justify-content:flex-start;
-  width:80%;
+  width:68%;
   max-height:350px;
   color:var(--font);
   gap: 1rem;
